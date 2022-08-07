@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="377.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.apphangman.HelloController">
+   <children>
+      <Button layoutX="178.0" layoutY="224.0" mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="35.0" prefWidth="165.0" text="Create" />
+      <TextField fx:id="dictionaryIDField" layoutX="178.0" layoutY="134.0" prefHeight="35.0" prefWidth="165.0" promptText="DICTIONARY-ID" />
+      <Label layoutX="46.0" layoutY="46.0" prefHeight="20.0" prefWidth="470.0" text="Please enter the DICTIONARY-ID you want to assign to the new dictionary">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="46.0" layoutY="66.0" prefHeight="19.0" prefWidth="386.0" text="and the Open Library ID of the book you want to use to create it:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="openlibraryIDField" layoutX="178.0" layoutY="179.0" prefHeight="35.0" prefWidth="165.0" promptText="Open Library ID" />
+      <Label fx:id="createprogressLabel" alignment="CENTER" layoutX="22.0" layoutY="276.0" prefHeight="18.0" prefWidth="478.0" textAlignment="CENTER" />
+      <Label layoutX="70.0" layoutY="143.0" text="DICTIONARY-ID:" />
+      <Label layoutX="70.0" layoutY="188.0" text="Open Library ID:" />
+   </children>
+</AnchorPane>
